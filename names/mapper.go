@@ -114,7 +114,7 @@ func titleCasedName(name string) string {
 		case upNextChar:
 			upNextChar = false
 			if 'a' <= c && c <= 'z' {
-				c += 'a' - 'A'
+				c -= 'a' - 'A'
 			}
 		case c == '_':
 			upNextChar = true
